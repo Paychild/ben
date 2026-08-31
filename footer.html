@@ -1,0 +1,190 @@
+          <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Footer Design</title>
+  <style>
+    /* Reset & Base Styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background-color: #f4f4f9;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    /* Footer Container Styling */
+    .site-footer {
+      background-color: lightgray;
+      color: #b5b5c3;
+      padding: 60px 0 20px;
+    }
+
+    .footer-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 30px;
+    }
+
+    /* Column Structures */
+    .footer-column {
+      flex: 1;
+      min-width: 220px;
+    }
+
+    .footer-column h3 {
+      color: #ffffff;
+      font-size: 18px;
+      margin-bottom: 20px;
+      position: relative;
+      font-weight: 600;
+    }
+
+    /* Typography & Links */
+    .footer-column p {
+      font-size: 14px;
+      line-height: 1.6;
+    }
+
+    .footer-column ul {
+      list-style: none;
+    }
+
+    .footer-column ul li {
+      margin-bottom: 12px;
+    }
+
+    .footer-column ul li a {
+      color: #b5b5c3;
+      text-decoration: none;
+      font-size: 14px;
+      transition: color 0.3s ease;
+    }
+
+    .footer-column ul li a:hover {
+      color: #00adb5;
+    }
+
+    /* Newsletter Form Layout */
+    .newsletter-form {
+      display: flex;
+      margin-top: 15px;
+    }
+
+    .newsletter-form input[type="email"] {
+      padding: 10px 15px;
+      font-size: 14px;
+      border: none;
+      outline: none;
+      border-radius: 4px 0 0 4px;
+      flex: 1;
+      background: #2a2a40;
+      color: #fff;
+    }
+
+    .newsletter-form button {
+      padding: 10px 20px;
+      background-color: #00adb5;
+      color: white;
+      border: none;
+      font-size: 14px;
+      font-weight: bold;
+      cursor: pointer;
+      border-radius: 0 4px 4px 0;
+      transition: background 0.3s ease;
+    }
+
+    .newsletter-form button:hover {
+      background-color: #008f95;
+    }
+
+    /* Bottom Copyright Banner */
+    .footer-bottom {
+      border-top: 1px solid lightgray;
+      margin-top: 40px;
+      padding-top: 20px;
+      text-align: center;
+      font-size: 13px;
+      background-color: lightgray;
+    }
+
+    /* Responsive Adaptation */
+    @media (max-width: 768px) {
+      .footer-container {
+        flex-direction: column;
+      }
+      .footer-column {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Main Content Space (Placeholder) -->
+  <div></div>
+
+  <!-- Semantic HTML Footer Section -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      
+      <!-- Column 1: About -->
+      <div class="footer-column">
+        <h3>About Us</h3>
+        <p>We craft modern digital experiences. Our focus centers on clean UI/UX, performant layouts, and highly functional backend structures.</p>
+      </div>
+
+      <!-- Column 2: Navigation Links -->
+      <div class="footer-column">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Our Services</a></li>
+          <li><a href="#">Project Gallery</a></li>
+          <li><a href="#">Contact Details</a></li>
+        </ul>
+      </div>
+
+      <!-- Column 3: Policy Pages -->
+      <div class="footer-column">
+        <h3>Legal</h3>
+        <ul>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of Service</a></li>
+          <li><a href="#">Cookie Settings</a></li>
+          <li><a href="#">GDPR Compliance</a></li>
+        </ul>
+      </div>
+
+      <!-- Column 4: Newsletter -->
+      <div class="footer-column">
+        <h3>Newsletter</h3>
+        <p>Subscribe to catch up on latest development notes.</p>
+        <form class="newsletter-form" action="#" method="POST">
+          <input type="email" placeholder="Your email address" required>
+          <button type="submit">Join</button>
+        </form>
+      </div>
+
+    </div>
+
+    <!-- Copyright Attribution Line -->
+    <div class="footer-bottom">
+      <p>&copy; 2026 TechBrand. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>

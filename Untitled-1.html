@@ -1,0 +1,103 @@
+<html>
+    <head>
+        <title>Another Trial</title>
+        <style>
+            * {
+                box-sizing: border-box;
+            }
+        header {
+            background-color: darkgoldenrod;
+            padding: 10px 20px;
+            font-size: 20px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: cornflowerblue;
+            color: black;
+            padding: 10px 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            text-align: center;
+            font-size: 10px
+        }
+
+        nav a {
+            padding: 20px;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            background-color: lightsteelblue;
+            color: brown;
+            cursor: pointer;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .sidebar {
+            background-color: lightgrey;
+            color: black;
+            padding: 10px;
+            margin: none;
+            font-size: 20px;
+            display:flex;
+            flex: 30%;
+        }
+
+        .main {
+            background-color: lightcyan;
+            color:black;
+            padding: 10px;
+            margin: none;
+            font-size: 30px;
+            display: flex;
+            flex: 70%;
+        }
+
+        footer {
+            background-color: dodgerblue;
+            color: black;
+            padding: 10px;
+            font-size: 20px;
+        }
+
+        @media screen and (min-width: 600px) {
+           #pac {
+            display: none;
+           } 
+        }
+        </style>
+    </head>
+    <body> 
+        <header>
+            <h1>Buju BNXN</h1>
+        </header>
+
+        <nav>
+            <a href="#">HOME</a>
+            <a href="#">CONTACT</a>
+            <a href="#">ABOUTE</a>
+            <a href="#">PORTFOLIO</a>
+            <a href="#">ADDRESS></a>
+        </nav> 
+
+        <div class="container">
+            <div class="sidebar" >
+                <h3 style="text-decoration: underline;">BUJU BENSON</h3>
+                <p id="pac"> Buju BNXN is a Nigerian singer and songwriter. He is known for his unique blend of Afrobeat, R&B, and hip-hop influences. Buju BNXN has gained popularity for his catchy melodies and thought-provoking lyrics, making him a prominent figure in the Nigerian music scene.</p> 
+            </div>
+            <div class="main">
+                <h5>BUJU Siblings</h5>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+
+        <footer>
+            <h3 style="width: 100%;">&copy; 2000 Lawal A Hafeez Paychild</h3>
+        </footer>
+    </body>
+</html>

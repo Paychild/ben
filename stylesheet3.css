@@ -1,0 +1,89 @@
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family:Arial, Helvetica, sans-serif
+}
+
+header {
+    background-color: cornflowerblue;
+    padding: 20px;
+    margin: none;
+    text-align: center;
+}
+
+nav {
+    background-color: rgb(45, 206, 169);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+nav a {
+    color:black;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    border: 2px solid #ccc;
+    text-align: center;
+}
+
+nav a:hover {
+    background-color: coral;
+    color: #ffffff58;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    flex:100%;
+}
+
+.sidechick {
+    background-color: lightgray;
+    padding: 20px;
+    flex: 30%;
+    border: 2px solid #ccc;
+}
+
+.maincontent {
+    background-color:darkgray;
+    padding: 20px;
+    flex: 60%;
+    font-size: 40px;
+}
+
+.otherchick {
+    background-color: rgb(42, 202, 231);
+    padding: 30px;
+    flex: 10%;
+    border: 2px solid #ccc;
+}
+
+
+footer {
+    background-color:darkkhaki;
+    padding: 20px;
+    text-align: center;
+}
+
+@media screen and (min-width: 600px) {
+  .container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  background-color: dodgerblue;
+  padding: 10px;
+  gap: 5px;
+}
+
+.container div {
+  background-color: #f1f1f1;
+  padding: 10px;
+  font-size: 30px;
+  text-align: center;
+}
+}
+</style>

@@ -1,0 +1,122 @@
+<html>
+    <head>
+        <title>My Project</title>
+        <style>
+
+            * {
+                box-sizing: border-box;
+            }
+
+            header {
+                background-color: cornflowerblue;
+                color: black;
+                padding: 20px;
+                margin: none;
+                text-align: center;
+            }
+
+            nav {
+                display: flex;
+                flex-wrap: wrap;
+                background-color: darkslateblue;
+                justify-content: space-around;
+            }
+
+            nav a {
+                color: black;
+                padding: 10px 20px;
+                margin: 10px;
+                font-size: 10px;
+            }
+              
+            nav :hover a {
+                background-color: goldenrod;
+                color:azure;
+            }
+
+            .container {
+                display: grid;
+                font-size: 20px;
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: auto;
+            }
+
+            .sidebar {
+                background-color: lightgray;
+                color: black;
+                padding: 20px;
+                margin: none;
+                text-align: center;
+                grid-column: 1;
+            }
+
+            .maincontent {
+                background-color: cornflowerblue;
+                color: black;
+                padding: 20px;
+                margin: none;
+                text-align: center;
+                grid-column: 2;
+                
+            }
+             .sidechick {
+                background-color: lavender;
+                color: black;
+                padding: 20px;
+                margin: none;
+                text-align: center;
+                grid-column: 1;
+            }
+             
+            footer {
+                background-color: darkslateblue;
+                color: black;
+                padding: 20px;
+                margin: none;
+                text-align: center;
+            }
+
+            @media screen and (max-width: 600px) {
+                nav {
+                    flex-direction: row;
+                }
+            }
+            
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>My Project</h1>
+        </header>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </nav>
+        <div class="container">
+            <div class="sidebar">
+                 <h2>Sidebar</h2>
+                <p>This is the sidebar content.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+            <div class="maincontent">
+                <h2>Main Content</h2>
+                <p>This is the main content area.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+            <div class="sidechick"> 
+                <h2>Sidebar</h2>
+                <p>This is the sidebar content.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+        </div>
+        <footer>
+            <p>&copy; 2023 My Project. All rights reserved.</p>
+            <input type="text" placeholder="enter your email">
+            <button>Subscribe</button>
+        </footer>
+    </body>
+</html>
+            
+                
+    

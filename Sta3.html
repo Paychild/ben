@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Codera - Fleet Management</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #ffffff;
+      color: #263242;
+    }
+
+    /* Header */
+    header {
+      width: 100%;
+      height: 92px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 31px;
+      background: #fff;
+    }
+
+    .nav-left {
+      display: flex;
+      align-items: center;
+      gap: 32px;
+    }
+
+    .nav-left a {
+      text-decoration: none;
+      color: #263242;
+      font-size: 12px;
+      font-weight: 500;
+    }
+
+    .nav-item {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+
+    .arrow {
+      font-size: 9px;
+      margin-top: 1px;
+    }
+
+    /* Center logo */
+    .logo {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      text-align: center;
+      color: #293643;
+      font-weight: bold;
+      font-size: 8px;
+      letter-spacing: 1px;
+    }
+
+    .logo-symbol {
+      width: 15px;
+      height: 15px;
+      margin: 0 auto 3px;
+      position: relative;
+    }
+
+    .logo-symbol::before {
+      content: "";
+      position: absolute;
+      width: 8px;
+      height: 8px;
+      background: #293643;
+      left: 3px;
+      top: 1px;
+      transform: rotate(45deg);
+      border-radius: 1px;
+    }
+
+    .logo-symbol::after {
+      content: "";
+      position: absolute;
+      width: 13px;
+      height: 3px;
+      background: #293643;
+      left: 1px;
+      bottom: 0;
+      border-radius: 2px;
+    }
+
+    /* Right side */
+    .nav-right {
+      display: flex;
+      align-items: center;
+      gap: 17px;
+    }
+
+    .language {
+      font-size: 12px;
+      color: #263242;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+
+    .demo-btn {
+      border: none;
+      background: #263242;
+      color: white;
+      padding: 11px 17px;
+      border-radius: 22px;
+      font-size: 11px;
+      font-weight: 600;
+      cursor: pointer;
+    }
+
+    .demo-btn:hover {
+      background: #17212d;
+    }
+
+    /* Hero */
+    .hero {
+      min-height: calc(100vh - 92px);
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      text-align: center;
+      padding-top: 126px;
+      background: #fff;
+    }
+
+    .hero-content {
+      max-width: 760px;
+      padding: 0 20px;
+    }
+
+    .hero h1 {
+      color: #293643;
+      font-size: clamp(48px, 6vw, 68px);
+      line-height: 0.94;
+      letter-spacing: -3px;
+      font-weight: 600;
+      margin-bottom: 27px;
+    }
+
+    .hero p {
+      max-width: 560px;
+      margin: 0 auto;
+      color: #4b5259;
+      font-size: 16px;
+      line-height: 1.45;
+      font-weight: 400;
+    }
+
+    /* Mobile */
+    @media (max-width: 700px) {
+      header {
+        height: 75px;
+        padding: 0 20px;
+      }
+
+      .nav-left {
+        gap: 15px;
+      }
+
+      .nav-left a {
+        font-size: 10px;
+      }
+
+      .logo {
+        display: none;
+      }
+
+      .language {
+        display: none;
+      }
+
+      .demo-btn {
+        font-size: 10px;
+        padding: 9px 13px;
+      }
+
+      .hero {
+        min-height: calc(100vh - 75px);
+        padding-top: 100px;
+      }
+
+      .hero h1 {
+        font-size: 46px;
+        letter-spacing: -2px;
+      }
+
+      .hero p {
+        font-size: 14px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <nav class="nav-left">
+      <a href="#" class="nav-item">
+        Solutions
+        <span class="arrow">⌄</span>
+      </a>
+
+      <a href="#" class="nav-item">
+        Products
+        <span class="arrow">⌄</span>
+      </a>
+
+      <a href="#">About</a>
+    </nav>
+
+    <div class="logo">
+      <div class="logo-symbol"></div>
+      CODERA
+    </div>
+
+    <div class="nav-right">
+      <div class="language">
+        En
+        <span class="arrow">⌄</span>
+      </div>
+
+      <button class="demo-btn">
+        Get a Demo
+      </button>
+    </div>
+  </header>
+
+  <main class="hero">
+    <div class="hero-content">
+
+      <h1>
+        Control your fleet<br>
+        like never before.
+      </h1>
+
+      <p>
+        Real-time tracking, advanced analytics, and seamless<br>
+        management – all in one powerful platform.
+      </p>
+
+    </div>
+  </main>
+
+</body>
+</html>

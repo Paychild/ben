@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Codera Footer</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #fff;
+      color: #111827;
+    }
+
+    /* =========================
+       FOOTER
+    ========================= */
+
+    .footer {
+      width: 100%;
+      background: #ffffff;
+      padding-top: 55px;
+    }
+
+    .footer-main {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 40px 70px;
+
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1fr 1.2fr;
+      column-gap: 60px;
+    }
+
+    /* =========================
+       BRAND
+    ========================= */
+
+    .footer-brand {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      min-height: 145px;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 9px;
+
+      font-size: 17px;
+      font-weight: 700;
+      color: #111827;
+      letter-spacing: 0.3px;
+    }
+
+    /*
+      Simple CSS version of the Codera icon.
+      Replace .logo-icon with your actual SVG/logo
+      if you have it.
+    */
+    .logo-icon {
+      width: 23px;
+      height: 23px;
+      background: #111827;
+      border-radius: 3px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .logo-icon::before {
+      content: "$";
+      position: absolute;
+      width: 7px;
+      height: 30px;
+      background: white;
+      transform: rotate(45deg);
+      left: 5px;
+      top: -5px;
+    }
+
+    .logo-icon::after {
+      content: "$";
+      position: absolute;
+      width: 7px;
+      height: 18px;
+      background: white;
+      transform: rotate(45deg);
+      left: 13px;
+      top: 8px;
+    }
+
+    /* =========================
+       SOCIAL LINKS
+    ========================= */
+
+    .social-links {
+      display: flex;
+      gap: 22px;
+    }
+
+    .social-links a {
+      text-decoration: none;
+      color: #111827;
+      font-size: 13px;
+      transition: opacity 0.2s ease;
+    }
+
+    .social-links a:hover {
+      opacity: 0.55;
+    }
+
+    /* =========================
+       FOOTER COLUMNS
+    ========================= */
+
+    .footer-column {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .footer-column a {
+      color: #30343b;
+      text-decoration: none;
+      font-size: 14px;
+      line-height: 1.25;
+      transition: color 0.2s ease;
+    }
+
+    .footer-column a:hover {
+      color: #000000;
+    }
+
+    /* =========================
+       COPYRIGHT
+    ========================= */
+
+    .footer-bottom {
+      width: 100%;
+      background: #f4f4f4;
+      border-top: 1px solid #eeeeee;
+
+      text-align: center;
+      padding: 14px 20px;
+
+      color: #555;
+      font-size: 11px;
+    }
+
+    /* =========================
+       RESPONSIVE
+    ========================= */
+
+    @media (max-width: 900px) {
+
+      .footer-main {
+        grid-template-columns: 1.5fr 1fr 1fr;
+        row-gap: 45px;
+      }
+
+      .footer-brand {
+        grid-column: span 3;
+      }
+    }
+
+    @media (max-width: 600px) {
+
+      .footer {
+        padding-top: 40px;
+      }
+
+      .footer-main {
+        padding: 0 25px 50px;
+        grid-template-columns: 1fr 1fr;
+        gap: 35px;
+      }
+
+      .footer-brand {
+        grid-column: span 2;
+      }
+
+      .footer-column {
+        gap: 12px;
+      }
+
+      .footer-column a {
+        font-size: 13px;
+      }
+    }
+
+    @media (max-width: 400px) {
+
+      .footer-main {
+        grid-template-columns: 1fr;
+      }
+
+      .footer-brand {
+        grid-column: span 1;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <footer class="footer">
+
+    <div class="footer-main">
+
+      <!-- BRAND / SOCIAL -->
+      <div class="footer-brand">
+
+        <div class="logo">
+          <div class="logo-icon"></div>
+          <span>CODERA</span>
+        </div>
+
+        <div class="social-links">
+          <a href="#" target="_blank">x.com</a>
+          <a href="#" target="_blank">facebook.com</a>
+        </div>
+
+      </div>
+
+
+      <!-- COLUMN 1 -->
+      <div class="footer-column">
+
+        <a href="#">Solutions</a>
+        <a href="#">Services</a>
+        <a href="#">Products</a>
+        <a href="#">Case Studies</a>
+        <a href="#">Pricing</a>
+
+      </div>
+
+
+      <!-- COLUMN 2 -->
+      <div class="footer-column">
+
+        <a href="#">About Us</a>
+        <a href="#">Blog</a>
+        <a href="#">News</a>
+        <a href="#">FAQ</a>
+        <a href="#">Support</a>
+
+      </div>
+
+
+      <!-- COLUMN 3 -->
+      <div class="footer-column">
+
+        <a href="#">Contact Us</a>
+        <a href="#">Locations</a>
+
+      </div>
+
+
+      <!-- COLUMN 4 -->
+      <div class="footer-column">
+
+        <a href="#">Terms of Service</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Cookies Policy</a>
+
+      </div>
+
+    </div>
+
+
+    <!-- COPYRIGHT -->
+    <div class="footer-bottom">
+      © 2024 Codera Inc. All rights reserved.
+    </div>
+
+  </footer>
+
+</body>
+</html>

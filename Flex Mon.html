@@ -1,0 +1,115 @@
+<html>
+    <head>
+        <title>FL</title>
+        <style>
+            *{
+                box-sizing: border-box;
+            } 
+
+            body {
+                font-family: 'Times New Roman', Times, serif;
+                padding: 0%;
+                margin: 0%;
+            }
+
+            header {
+                background-color: rgb(14, 196, 187);
+                color: black;
+                padding: 15px;
+                text-align: center;
+                text-shadow: 10px;
+            }
+
+            nav {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-around;
+                background-color: cornflowerblue;
+            }
+
+            nav a {
+                color: black;
+                padding: 10px;
+                margin: 10px;
+                text-decoration: none;
+            }
+
+            nav a:hover{
+                background-color: dodgerblue;
+                color: black;
+                cursor: pointer;
+                border-radius: 10px;
+            }
+
+            .container {
+                display: flex;
+                flex-wrap: wrap;
+                flex: 100%;
+                flex-direction: row;
+            }
+
+            .sidebar {
+                background-color: lightpink;
+                color: black;
+                padding: 10px;
+                margin: 10px;
+                flex: 30%;
+                border-radius: 10px;
+            }
+
+            .content {
+                background-color: lightsalmon;
+                color: black;
+                padding: 10px;
+                margin: 10px;
+                flex: 70%;
+                border-radius: 10px;
+            }
+
+            footer {
+                background-color: deepskyblue;
+                color: black;
+                text-align: center;
+                padding: 16px;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>FLEXBOX TRIAL</h1>
+        </header>
+        <nav>
+            <a href="#home">HOME</a>
+            <a href="#home">CONTACT</a>
+            <a href="#home">ADDRESS</a>
+            <a href="#home">SERVICE</a>
+            <a href="#home">PORTFORLIO</a>
+        </nav>
+        <div class="container">
+            <div class="sidebar">
+                <h2>FLEX A</h2>
+                <p>Side Bar is not much of a work in place.</p>
+                <p>Side Bar is not much of a work in place.</p>
+                <p>Side Bar is not much of a work in place.</p>
+                <p>Side Bar is not much of a work in place.</p>
+            </div>
+            <div class="content">
+                <h2>FLEX B</h2>
+                <p>This is a work domain cus its where all the real peice falls in place.</p>
+                <p>This is a work domain cus its where all the real peice falls in place.</p>
+                <p>This is a work domain cus its where all the real peice falls in place.</p>
+                <p>This is a work domain cus its where all the real peice falls in place.</p>
+                <p>This is a work domain cus its where all the real peice falls in place.</p>
+                <p>This is a work domain cus its where all the real peice falls in place.</p>
+                <p>This is a work domain cus its where all the real peice falls in place.</p>
+                <p>This is a work domain cus its where all the real peice falls in place.</p>
+                <p>This is a work domain cus its where all the real peice falls in place.</p>
+            </div>
+        </div>
+        <footer>
+            <p>&copy;2026 All Rights Are Reserved.</p>
+            <input type="text" placeholder="Enter your Email">
+            <button>Subscribe</button>
+        </footer>
+    </body>
+</html>
