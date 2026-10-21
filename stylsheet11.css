@@ -1,0 +1,37 @@
+
+*{
+    box-sizing: border-box
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: darkslateblue;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    background-color: cornflowerblue;
+}
+
+nav a{
+    color: black;
+    padding: 10px;
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+}
+
+nav a:hover{
+    background-color: lightblue;
+}
+
+header{
+    text-align: center;
+    text-decoration: underline;
+    font-weight: 300;
+    color: black;
+}
+

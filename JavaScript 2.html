@@ -1,0 +1,26 @@
+<html>
+<head>
+    <title>Guessing Game</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.1">
+    <link rel="stylesheet" href="style50.css">
+</head>
+<body>
+    <h1>Guess the number</h1>
+    <form>
+        <p>I am thinking of a number between 1 and 10</p>
+        <input type="text" id="guessInput" placeholder="Enter number">
+        <button type="button" id="guessBtn" onclick="checkCondition()" >Guess</button>
+        <div id="feedback" class="div">
+
+        </div>
+        <div id="attemptsDisplay" class="div">Attempts : 0</div>
+        <div id="secretCode">
+
+        </div>
+        <button onclick= "playAgain()">Play Again</button>
+    </form>
+    <script src="Santorini.js">
+
+    </script>
+</body>

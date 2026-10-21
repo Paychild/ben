@@ -1,0 +1,28 @@
+body{
+    background-color: lightblue;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+}
+
+nav li  a{
+    list-style: none;
+}
+
+
+nav a:hover{
+    background-color: blue;
+}
+
+header{
+    text-align: center;
+    color: black;
+    font-weight: 300px;
+    font-size: 35px;
+}

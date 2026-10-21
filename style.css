@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    background-color:lightgray;
+}
+
+h1{
+    color:black;
+    text-align: center;
+}
+
+.container{
+    width: 30%;
+    margin: 2rem auto;
+    border: 1px solid black;
+    padding: 15px;
+    border-radius: 10px;
+
+}
+
+form{
+    width: 90%;
+    margin: 0 auto;
+
+}
+
+#search{
+    margin: 0.5rem 0;
+}
+
+.err{
+    color: red;
+    background-color: rgb(218, 44, 44);
+    width: 70%;
+    margin: 0.5rem 0;
+    display:none;
+}
+.task-list {
+    text-decoration: none;
+    margin:1rem 0;
+}
+
+ul li{
+    list-style: none;
+}
+
+.check{
+    display: flex;
+    flex: flex wrap;
+    flex-direction: column;
+}
+

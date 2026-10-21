@@ -1,0 +1,24 @@
+<html>
+<body>
+<h1>Aura Salad</h1>
+<h2>The ... (spread) Operator</h2>
+<p>The ... operator can spread array elements to a function:</p>
+<p id="demo"></p>
+
+<script>
+const numbers = [23,55,21,87,56];
+let minValue = Math.min(...numbers);
+let maxValue = Math.max(...numbers);
+document.getElementById("demo").innerHTML = "Min = " + minValue + "<br> Max = " + maxValue; 
+
+
+let text = "";
+
+for (let i = 0; i < 5; i++) {
+  text += "The number is " + i + "<br>";
+}
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title>To Do List</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style2.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+        <meta name="viewport" content="width=device-width, initial-scale=0.1">
+    </head>
+    <body onload="taskbar.construct()">
+
+        <div id="tasker" class="task-container">
+        <h2>Task Manager</h2>
+            <span id="error" class="error">Please enter a task</span> 
+        
+            <div id="tasker-header" class="input-group">
+
+                <input type="text" id="input-task" placeholder="Enter a task">
+            
+                <button  type="button" id="add-btn"><i class="bi bi-plus-square-fill">Add Task</i></button>
+            </div>
+        
+                <ul id="task">
+                    <li>
+                        <!-- <input type="checkbox"><button><i class="bi bi-trash3"></i></button> -->
+                    </li>
+                </ul>
+        </div>
+                 <script src="Paychild.js"></script>
+
+        </body>
+        </html>
