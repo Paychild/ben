@@ -1,10 +1,9 @@
-import { Header } from '../Components/Header';
+import { Header } from '../components/Header';
 import './OrderPage.css';
 
 export function OrderPage(){
     return(
     <>
-
      <Header/>
 
     <div className="orders-page">
@@ -61,7 +60,7 @@ export function OrderPage(){
             </div>
 
             <div className="product-image-container">
-              <img src="images/products/adults-plain-cotton-tshirt-2-pack-teal.jpg" />
+              <img src="images/products/adults-plain-cotton-t-shirt-2-pack-teal.jpg" />
             </div>
 
             <div className="product-details">

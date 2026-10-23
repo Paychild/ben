@@ -1,4 +1,4 @@
-import { Header} from './components/Header';
+import { Header} from '../components/Header';
 import './HomePage.css';
 
 export function HomePage(){
@@ -6,7 +6,6 @@ export function HomePage(){
         <>
         <Header />
     
-
                 <div className="home-page">
                 <div className="products-grid">
                     <div className="product-container">
@@ -110,7 +109,7 @@ export function HomePage(){
                     <div className="product-container">
                     <div className="product-image-container">
                         <img className="product-image"
-                        src="images/products/adults-plain-cotton-tshirt-2-pack-teal.jpg" />
+                        src="images/products/adults-plain-cotton-t-shirt-2-pack-teal.jpg" />
                     </div>
 
                     <div className="product-name limit-text-to-2-lines">

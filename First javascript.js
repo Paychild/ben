@@ -1,76 +1,22 @@
-
-    // let task = [];
-
-    // function displayTask() {
-    //     let tusk = "";
-    //     for (let a = 0; a < task.length; a++)
-    //         tusk += "<li>" + task[a] +
-    //     "<button onclick= 'removeTask (" + a + ")'>b</button></li>".;
-    // }
-    // document.getElementById("demo1").innerHTML = tusk;
-
-    // function addTask(){
-    //     let taskInputs = document.getElementById("demo2");
-    //     let text = taskInputs.value;
-    //     if( text === "") {
-    //         return;
-    //     }
-    //     task.push(text);
-    //     taskInputs.value = "";
-    //     saveTasks(),
-    //     displayTask(),
-//     // }
-// <html>
-//     <body>
-// <h2>Counter</h2>
-
-// <p id="count" style="font-size:40px;">0</p>
-
-// <button onclick="increaseCount()">+</button>
-// <button onclick="decreaseCount()">-</button>
-// <button onclick="resetCount()">Reset</button>
-// <button onclick="saveCount()">Save</button>
-// <button onclick="loadCount()">Load</button>
-
-// <script>
-// let count = 0;
-
-// // Function to display the counter
-// function updateCount() {
-//   document.getElementById("count").innerHTML = count;
-// }
-
-// // Function to increase the counter
-// function increaseCount() {
-//   count++;
-//   updateCount();
-// }
-
-// // Function to decrease the counter
-// function decreaseCount() {
-//   count--;
-//   updateCount();
-// }
-
-// // Function to reset the counter
-// function resetCount() {
-//   count = 0;
-//   updateCount();
-// }
-
-// // Function to save the counter
-// function saveCount() {
-//   localStorage.setItem("count", count);
-// }
-
-// // Function to load the counter
-// function loadCount() {
-//   let saved = localStorage.getItem("count");
-//   if (saved !== null) {
-//     count = Number(saved);
-//   }
-//   updateCount();
-// }
-// </script>
-// </body>
-// </html>
+// 1. Early return with if — good for whole-component decisions
+function Dashboard({ user }) {
+  if (!user) {
+    return <p>Please log in.</p>;
+  }
+  return <h1>Welcome, {user.name}</h1>;
+}
+ 
+// 2. Ternary — choose between two things inline
+function Status({ isOnline }) {
+  return <span>{isOnline ? "🟢 Online" : "⚪ Offline"}</span>;
+}
+ 
+// 3. && — show something or nothing
+function Inbox({ unread }) {
+  return (
+    <div>
+      <h2>Inbox</h2>
+      {unread > 0 && <p>You have {unread} unread messages.</p>}
+    </div>
+  );
+}
