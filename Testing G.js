@@ -1,8 +1,5 @@
-
-
-"use strict"
-
-let Expr = prompt("3+6");
-alert (eval(Expr));
+const person = {first: "Bake",last: "Berry", age:45};
+const{first, last,age} = person;
+console.log(first,last,age);
 
  
